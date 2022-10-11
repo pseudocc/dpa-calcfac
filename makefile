@@ -1,5 +1,8 @@
+PREFIX=/usr/local
 CC = gcc
 LDFLAGS=-ladvmath
+
+DESTDIR=$(PREFIX)/bin
 
 all: calcfac
 
@@ -9,6 +12,11 @@ all: calcfac
 calcfac: %: %.o
 	$(CC) $^ $(LDFLAGS) -o $@
 
-.PHONY:
+install: calcfac
+	install -d $(DESTDIR)
+	install $< $(DESTDIR)/calcfac
+
 clean:
 	rm -f calcfac *.o
+
+.PHONY: clean install

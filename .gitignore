@@ -1,2 +1,5 @@
 calcfac
 *.o
+debian/debhelper-build-stamp
+debian/*.substvars
+debian/files

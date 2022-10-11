@@ -1,0 +1,11 @@
+Source: calcfac
+Standards-Version: 0.1.0
+Section: misc
+Priority: optional
+Maintainer: Atlas Yu <atlas.yu@canonical.com>
+Build-Depends: gcc (>= 4:11), make (>= 4.3), debhelper-compat (= 13), libirmath-dev (>= 2)
+
+Package: calcfac
+Architecture: all
+Depends: ${misc:Depends}, ${shlibs:Depends}, libirmath (>= 2)
+Description: DPA(Debian policy adventure): calculate factorial which depends on libirmath.
