@@ -1,9 +1,9 @@
 Source: calcfac
-Standards-Version: 1.0.0
+Standards-Version: 4.6.0
 Section: misc
 Priority: optional
 Maintainer: Atlas Yu <atlas.yu@canonical.com>
-Build-Depends: gcc (>= 4:11), make (>= 4.3), debhelper-compat (= 13), libirmath-dev (>= 2)
+Build-Depends: gcc (>= 4:11), make (>= 4.3), debhelper-compat (= 13), libirmath-dev (>= 2), bash-completion (>= 1:2)
 
 Package: calcfac
 Architecture: all

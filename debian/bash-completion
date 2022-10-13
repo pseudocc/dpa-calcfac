@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+complete -W "11 29" calcfac
